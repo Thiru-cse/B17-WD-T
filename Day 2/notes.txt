@@ -1,0 +1,88 @@
+Programming:
+            Machine Understandable language,
+            To give instruction to the computer,
+            Reduce human effort.
+
+console.log("Welcome, B17");
+Task: Hi i'm name from location
+
+Variable
+
+Values -> you can store different things!
+
+Example:
+var           toys          = "remote car";
+ |              |                  |
+variable     variable name        value
+
+var toys = "remote car";
+console.log(toys);
+
+// Task: Name-Thiru
+
+var toys = "remote car"; //String
+var noOfToys = 5; //Number
+
+Variable Types:
+1. String
+2. Number
+
+// Task: Name, Age, Location, Course, Mentor Name.
+
+Array - []
+
+var name = "venkat"
+var age = 25;
+var location = "chennai";
+var course = "javascript";
+
+Example:
+var person = ["venkat", 25, "chennai", 600056];
+console.log(person);
+
+Object: {key: value}
+
+Example:
+var car = {
+    wheel: 4,
+    color: "red",
+    brand: "bmw",
+    milege: 20
+}
+
+console.log(car);
+console.log(car.brand);
+
+// Task: Resume-Name, mail, education, experience. - mail
+
+Alert:
+
+Example:
+alert("Welcome");
+
+Prompts:
+Example:
+prompt("What is your name?");
+
+Boolean: True/False
+var age = 17;
+console.log(age>=18);
+
+if:
+Syntax:
+       if(condition){
+        //code to be executed if condition is true
+       } else {
+        //code to be executed if condition is false
+       }
+
+Example:
+var a = 2;
+
+if(a % 2 == 0){
+    console.log("Even")
+} else {
+    console.log("Odd")
+}
+
+// Task: Voter ID - 18 -> Eligible to Vote / Not Eligible to Vote
