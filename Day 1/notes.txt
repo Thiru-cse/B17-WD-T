@@ -1,0 +1,68 @@
+HTTP Methods:
+
+GET - retrieve(Fetch data from the server)
+
+POST - create(Create a new resource on the server)
+
+PUT - Update
+
+DELETE - Delete
+
+HTTP Return Codes:
+100 - 199 => Informational Response
+200 - 299 => Success Response
+300 - 399 => Redirection Response
+400 - 499 => Client Error Response
+500 - 599 => Server Error Response
+
+Data Types:
+
+1.Primitive Data Types:
+- String => var name = "John";
+- Number => var age = 25;
+- Boolean => var isAdmin = true;
+- Undefined => var a;
+               console.log(a);
+
+2.Non-Primitive Data Types:
+- Array => var person = ["John", 25];
+- Object => var person = {name: "John", age: 25};
+
+// toUppercase 
+var name = "thiru";
+console.log(name.toUpperCase());
+
+// charAt(): return the character as a specified index of a string.
+
+Example:
+"T r a i n" -> position
+ 0 1 2 3 4
+
+var toy = "train";
+console.log(toy.charAt(2));
+
+- Task: lowercase(FULLSTACK)
+
+== - only check values
+=== - both value and types
+
+Example:
+var a = 0;    //number
+var b = "0";  //string
+console.log(a===b);
+
+// Else-if
+var age = 26;
+
+if(age<25){
+    console.log("Jolly Person!");
+}else if(age==26){
+    console.log("life is started!")
+} else {
+    console.log("All the best!")
+}
+
+Task:
+below 18 - Go to school
+above 18 - Go to College
+above 24 - Go to work
