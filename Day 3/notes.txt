@@ -1,0 +1,172 @@
+Function:
+- to perform a particular task
+- to avoid repetation of code
+- return: to get the value outside of the function.
+
+Types of Function:
+1.Function Declaration/Normal Function
+2.Arrow Function
+3.IIFE Function
+4.Function Expression/Anonymous Function
+
+1.Function Declaration/Normal Funtion:
+
+Syntax:
+function functionName(parameters){
+    // code to be executed
+}
+
+Example:
+function first(){
+    console.log("Function");
+}
+
+first();
+
+Example 2:
+function add(a, b){
+    return a+b;
+}
+
+console.log(add(5, 2));
+
+Task: 2 - 10(Function)
+
+2.Function Expression/Anonymous Function:
+- Function without name, often used as argument to other function.
+- use case: mostly for if any events
+- syntax: var functionName = function(parameters){code to be executed};
+
+Example:
+var sub = function(a,b){
+    return a-b;
+}
+
+console.log(sub(5,3))
+
+3. Arrow Function:
+- Introduced in ES6 Version
+- To reduce the code length
+syntax: var functionName = (parameters) => {code to be executed}
+
+Example:
+var multi = (a,b) =>{
+    return a*b;
+}
+console.log(multi(2,5));
+
+4. Immediately Invoked Function Expression (IIFE):
+- Immediately delete the values after using because it has
+- limited memory space
+- syntax: (function(){code to be executed})();
+
+Example:
+(function(){
+    console.log("This function runs immediately")
+})();
+
+Scope:
+1. Global Scope
+2. Function Scope
+3. Block Scope
+
+// var - Declares a variable(function-scope / Global Scope)
+// let - Declare a blocked scope variable
+// const - Declare a block-scoped constant(cannot be reassigned)
+
+Example:
+let a = 100; 
+ 
+function names(){
+    let a = 1000;
+    return a;
+}
+
+console.log(a);
+console.log(names());
+
+Terinary Operator: (Shorthand If-else)
+- Used to reduce the code length
+- syntax: condition ? value_if_true : value_if_false
+
+Example:
+let price = 0;
+const res = price > 50 ? "greater than 50" : "less than 50";
+console.log(res);
+
+Switch Case: it basically act like switchboard.
+
+Syntax:
+switch(variable to be checked){
+    case value1:
+    code to be executed
+    break;
+
+    case value2:
+    code to be executed
+    break;
+
+    default:
+}
+
+Example:
+var category = "d"
+
+switch(category){
+    case "kids":
+        console.log("Go to play");
+        break;
+        
+        case "Men":
+            console.log("Go to Heaven");
+            break;
+            
+            case "women":
+                console.log("Go to world");
+                break;
+                
+                default:
+                console.log("You are a alien!")
+}
+
+Task: Tv, Light, Fan - Switch Case -> off - Tv
+
+While - Entry check
+Syntax: 
+while (condition) {
+   // code to be executed
+}
+
+Example:
+let i=1;
+while(i<=5){
+    console.log("i",i)
+    i++;
+}
+
+Do while - Exit Check
+Example:
+let i=10;
+do{
+    console.log(i)
+    i--;
+}while(i<5)
+
+For loop: set of instruction that you follow over and over again util you are done.
+
+Syntax:
+for(initialization; condition; updating;){
+    // code to be executed
+}
+
+Example:
+for(var i=0; i<=10; i++){
+    console.log(i);
+}
+
+Example:
+var toys = ["ball", "car", "train", "teddy bear"];
+
+for(var i=0; i<=toys.length; i++){
+    console.log(toys[i]);
+}
