@@ -1,0 +1,140 @@
+Day 5 - HTML(30/12/24)
+
+What is HTML? Why use it!
+
+HTML - Hyper Text Markup Language
+HTML vs HTML5
+Head Tag: Meta tag-information about the document
+Body Tag: Contain all of your document
+Basic Tag:
+Element: Tag + Content
+Example: <h1>Welcome</h1>
+above one is called Element.
+
+Heading Tag: H1...H6
+
+Paragraph Tag:<p>Some paragraph</p>
+
+Break Tag: <br> - line break
+
+- To redirect the document, we use "a tag/anchor tag".
+Example: 
+<a href="https://github.com/Thiru-cse">Session Notes</a>
+attribute: it gives the additional information about the tag.
+href: represent the link where it has to be redirected.
+target: help us to open the document on the new tab.
+
+- Bold Tag:
+Example:
+<b>GUVI</b>
+
+- Underline Tag:
+Example:
+<u>India’s</u>
+
+- image tag:
+Example:
+<img src="https://www.guvi.in/assets/DUN3iNaq-women-with-notebook-latest.webp">
+<img src="./cat.webp" alt="Cat Image">
+
+- List: Ordered list, UnOrdered list.
+Example:
+ <ul>
+        <li>Monday</li>
+        <li>Tuesday</li>
+        <li>Wednesday</li>
+        <li>Thursday</li>
+        <li>Friday</li>
+    </ul>
+
+Example:
+ <ol>
+        <li>Jan</li>
+        <li>Feb</li>
+        <li>Mar</li>
+        <li>Apr</li>
+</ol>
+
+Div: Division
+Example:
+<div style="background-color: brown;">
+<h2>Leading EdTech<span style="color: green;"> Vernacular Upskilling</span></h2>
+</div>
+
+Table:
+tr: table row
+td: table data
+th: table head
+
+Example:
+   <table border="2" width="50%" cellspacing="10" cellpadding="20">
+        <tr>
+            <th>Day</th>
+            <th>Period 1</th>
+            <th>Period 2</th>
+            <th>Period 3</th>
+            <th>Period 4</th>
+        </tr>
+        <td>Mon</td>
+        <td>Maths</td>
+        <td>PET</td>
+        <td>Tamil</td>
+        <td>social</td>
+    </table>
+
+Forms:
+Example:
+    <form>
+        <label>UserName</label>
+        <input type="text"><br>
+        <input type="number"><br>
+        <input type="password"><br>
+        <input type="email"><br>
+        <input type="date"><br>
+        <input type="range"><br>
+        <input type="file"><br>
+        <input type="radio"><br>
+        <input type="color"><br>
+        <button>Submit</button>
+    </form>
+
+Task: Form-FirstName, LastName, Email, Password, Age, Upload File.
+
+Semantic Tags:
+Header, Navigation, Main, Section, Article, Aside, Footer.
+
+Example:
+ <div>
+        <!-- Header -->
+        <header>
+            <h1>Portfolio</h1>
+            <p>Welcome to my portfolio</p>
+        </header>
+        <!-- Navigation -->
+         <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+         </nav>
+
+        <!-- Main Content -->
+         <main>
+            <Article>
+                <h2>Understanding Semantic Tag</h2>
+                <p>Semantic HTML introduces meaning to web page element, making it easier for search engines to understand the structure of a web page</p>
+            </Article>
+
+            <!-- Aside section -->
+            <aside>
+                <h3>Aside</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur cum aliquam similique vero? Sapiente itaque eos dicta soluta doloribus officiis!</p>
+            </aside>
+         </main>
+
+        <!-- Footer -->
+         <footer>
+            <p>&copy; 2020</p>
+         </footer>
+    </div>
