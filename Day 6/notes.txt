@@ -1,0 +1,115 @@
+Day 6 - CSS - 31/12/24
+
+CSS - Cascading Style Sheet
+Why: to add customized to the website.
+
+Inline CSS:
+Example:
+<h3 style="color: brown;">Leading EdTech Platform for Vernacular Upskilling</h3>
+style: attribute
+color: property
+brown: value
+
+Internal CSS:
+Example:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 6 - CSS</title>
+<style>
+    p{
+        color: red;
+        font-size: 30px;
+        background-color: burlywood;
+    }
+    h3{
+        color: blue;
+    }
+</style>
+</head>
+<body>
+    <h3>Leading EdTech Platform for Vernacular Upskilling</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, et?</p>
+</body>
+</html>
+
+External CSS:
+Example:
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 6 - CSS</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <h3>Leading EdTech Platform for Vernacular Upskilling</h3>
+</body>
+</html>
+
+Block Element:
+div, p, h1, ul, ol
+
+Inline Element:
+span, a, img, b
+
+Example:
+    <div>FSD B17</div>
+    <div>FSD B17</div>
+    <span>FSD B17</span>
+    <span>FSD B17</span>
+
+Semantic Tags:
+Header - Resume Title
+Main - Summary
+Section - Schl, Clg
+Article - Tell me about yourself
+Footer - contact, Github, linkedIn, Mail.
+
+Selector:
+class - .className
+id - #idName
+tag - <h3>
+
+Example:
+ <h3 class="main">Lorem ipsum dolor sit amet consectetur</h3>
+ <p id="para">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+
+ Shortcut:
+ For Comment: Cntrl + /
+
+Pseudo classes: Link, visited, hover, active.
+Example:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 6 - CSS</title>
+</head>
+<style>
+    /* Unvisited link */
+    a:link{
+        color: orange;
+    }
+    /* Visited link */
+    a:visited{
+        color: green;
+    }
+    /* Active link */
+    a:active{
+        color: red;
+    }
+    /* Hover link */
+    a:hover{
+        color: blue;
+    }
+</style>
+<body>
+    <p>Here are some links</p>
+    <a href="https://example.com">Visit Example</a><br> 
+    <a href="https://github.com">Visit Example</a>    
+</body>
+</html>
