@@ -1,0 +1,127 @@
+CSS - 2/1/25
+
+Box Model:
+it is box that wrapped around an every html element.
+it is consist of
+Margin, Padding, Border. 
+
+Example:
+margin: 50px;
+
+to avoid above scenerio we use short hand notation.
+all the side we can write it in single line,
+margin apply values in clockwise direction.
+
+Example:
+  margin: 50px  10px   0px    0px;
+       /* top  right  bottom  left */
+
+Margin
+------
+Border
+------
+Padding
+
+Example:
+div{
+    width: 250px;
+    height: 150px;
+    background-color: red;
+    padding: 50px;
+    margin: 50px;
+    border: 5px dotted black;
+}
+
+Steps for Icon:
+CDN WEBSITE LINK: https://cdnjs.com/libraries/font-awesome
+ICON WEBSITE LINK: https://fontawesome.com/icons/
+
+ICON Example:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 7 - CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<body>
+    <div>
+        <i class="fa-brands fa-instagram icon"></i><br>
+        Box Model
+    </div>
+</body>
+</html>
+
+Fonts website link: https://fonts.google.com/ 
+
+Example:
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.main1 {
+  font-family: "Poppins", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+Display Properties:
+Example:
+<span class="inline-div">Content 1</span>
+.inline-div{
+    display: block;
+    background-color: bisque;
+}
+
+Position Properties:
+need: even though if you have top, left, bottom and right.
+      which can be used to place/align the element on the page.
+      1. Static
+      2. Relative
+      3. Absolute
+      4. Fixed
+      5. Sticky
+
+Relative Example:
+
+<div class="main">Relative</div>
+.main1{
+    height: 150px;
+    width: 200px;
+    background-color: aqua;
+    position: relative;
+    left: 50px;
+    top: 100px;
+}
+
+
+Absolute Example:
+
+<div class="parent">
+        <div class="child">Absolute</div>
+    </div>
+.parent{
+    height: 300px;
+    width: 300px;
+    background-color: green;
+    margin: 50px;
+    position: relative;
+}
+
+.child{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background-color: salmon;
+    color: blue;
+    font-size: 18px;
+}
+
+Task: guvi course.
+
+Fixed: the element is positioned relative to the browser window.
+
+Sticky: the element is positioned based on the user's scroll position 
+        a sticky element toggles between relative and fixed position when being scrolled.
+
+Example Site: https://positiondemo.netlify.app/
