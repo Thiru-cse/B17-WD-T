@@ -1,0 +1,150 @@
+Day 8 - Flexbox - 3/1/25
+
+Flex Box:
+- Flexible box
+- One dimensional layout
+
+Example: Flex, direction
+HTML Part:
+ <div>
+        <h1>A</h1>
+        <h1>B</h1>
+        <h1>C</h1>
+        <h1>D</h1>      
+    </div>
+Styles Part:
+div{
+    background-color: aqua;
+    display: flex;
+    /* flex-direction: row; */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+    /* flex-direction: row-reverse; */
+}
+
+h1{
+    margin: 5px;
+    padding: 10px;
+    background-color: brown;
+}
+
+Example: Flex Wrap
+HTML Part:
+ <div>
+        <h1>A</h1>
+        <h1>B</h1>
+        <h1>C</h1>
+        <h1>D</h1>      
+    </div>
+Styles Part:
+div{
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    /* flex-wrap: nowrap; */
+    flex-wrap: wrap;
+}
+
+Example: Justify Content
+div{
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    /* width: 400px; */
+    /* flex-wrap: nowrap; */
+    flex-wrap: wrap;
+
+    /* justify-content: start; */
+    /* justify-content: end; */
+    /* justify-content: space-between; */
+    justify-content: space-around;
+}
+
+Example: Flex Basis
+.container{
+    display: flex;
+    background-color: black;
+    color: white;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+h1{
+    background-color: cadetblue;
+    margin: 5px;
+    padding: 5px;
+    flex-basis: 23%;
+}
+
+Example:
+.container{
+    display: flex;
+    background-color: black;
+    color: white;
+    flex-wrap: wrap;
+    column-gap: 10px;
+}
+
+h1{
+    background-color: cadetblue;
+    flex-basis: 23%;
+}
+
+Flex Container Property:
+Flex, Flex-direction, Flex-wrap, row-gap, column-gap,
+Justify-content(x), align-item(y), align-content(y)
+
+Flex Item Property:
+Order, Flex-grow, Flex-basis, align-self.
+
+Practice: https://flexboxfroggy.com/
+
+Media Query:
+            it is called RWD
+            Responsive Web Design.
+
+            Syntax:
+            @media screen and (max-width: 600px) {
+                / CSS Code for Mobile Devices /
+            }
+
+Example:
+.main{
+    background-color: aqua;
+    height: 100px;
+    font-size: 60px;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px){
+    .main{
+        background-color: red;
+        font-size: 20px;
+    }
+}
+
+Gradient: Solid & linear
+Example: HTML Code
+<div class="header">Solid</div>
+<button class="gradient-button">Gradient Button</button>
+
+Example: CSS Code
+.header{
+    width: 100%;
+    height: 80px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+.gradient-button{
+    width: 200px;
+    padding: 10px 20px;
+    background: linear-gradient(to left, #ff105f, #ffad06 );
+    text-align: center;
+    border-radius: 5px;
+    margin: 20px;
+    border: none;
+    cursor: pointer;
+}
