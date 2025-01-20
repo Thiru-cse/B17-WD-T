@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+      <!-- Icon CDN Link -->
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Font CDN Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar Section. -->
+     <nav class="navbar">
+        <div class="logo">John Doe</div>
+        <div class="nav-links">
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+     </nav>
+
+     <!-- Header Section. -->
+      <header id="home">
+        <h1>Hi, I'm John Doe</h1>
+        <p>MERN STACK DEVELOPER | FULLSTACK EXPERT</p>
+      </header>
+
+        <!-- About Section. -->
+         <section class="about" id="about">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>I am a passionate full stack developer</p>
+                    <p>My goal is to continously learn and improve my skills</p>
+                    <p>i'm currently working at GUVI</p>
+                </div>
+                <div class="about-img">
+                    <img src="./assets/Testimonial Image.png" alt="About Image">
+                </div>
+            </div>
+         </section>
+
+         <!-- Skills Section. -->
+          <section class="skills" id="skills">
+            <h2>My Skills</h2>
+            <div class="skills-container">
+                <div class="skill-card"><i class="fa-brands fa-html5"></i>HTML</div>
+                <div class="skill-card"><i class="fa-brands fa-css3-alt"></i>CSS</div>
+                <div class="skill-card"><i class="fa-brands fa-js"></i>JAVASCRIPT</div>
+                <div class="skill-card"><i class="fa-brands fa-react"></i>REACT</div>
+                <div class="skill-card"><i class="fa-brands fa-node"></i>NODE.JS</div>
+                <div class="skill-card"><i class="fa-solid fa-database"></i>MONGODB</div>
+            </div>
+          </section>
+
+          <!-- Project Section. -->
+           <section class="projects" id="projects">
+            <h2>Projects</h2>
+            <div class="project-card">
+                <img src="https://www.vocso.com/blog/wp-content/uploads/2022/02/eCommerce-Website-Features-1920-x-1080.jpg" alt="Project Image">
+                <h3>E-commerce Website</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto, temporibus!</p>
+                <div class="project-button">
+                    <a href="live" class="btn"><i class="fa-solid fa-link"></i>Live Demo</a>
+                    <a href="github" class="btn"><i class="fa-brands fa-github"></i>Source Code</a>
+                </div>
+            </div>
+           </section>
+
+           <!-- Contact Section. -->
+            <section class="contact" id="contact">
+                <h2>Contact Me</h2>
+                <form action="#">
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <textarea placeholder="Message"></textarea>
+                    <button type="submit">Send</button>
+                </form>
+                <div class="social-links">
+                    <a href="https://github.com/Thiru-cse" target="_blank"><i class="fa-brands fa-github"></i>Github</a>
+                    <a href="https://in.linkedin.com/"><i class="fa-brands fa-linkedin"></i>LinkedIN</a>
+                </div>
+            </section>
+</body>
+</html>
