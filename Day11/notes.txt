@@ -1,0 +1,86 @@
+Day 11 - Tailwind CSS - 10/01/25
+
+Tailwind CSS - https://tailwindcss.com/docs/installation/
+Grid: https://cssgridgarden.com/
+
+D/F Bootstrap and TailwindCSS:
+
+Bootstrap: is best for developers who want a quick solution with ready-made components 
+           and a consistent design but might face limitations in customization.
+
+TailwindCSS: is deal for developers looking for flexibility and control over their design
+             allowing them to craft unique interfaces without constraint of pre-defined components.
+
+Setup 1: PlayCDN
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <h1 class="text-3xl font-bold">
+    Hello world!
+  </h1>
+</body>
+</html>
+
+Setup 2: TailwindCli method
+
+1:Install Tailwind CSS
+2:Configure your template paths
+3:Add the Tailwind directives to your CSS
+4:Start the Tailwind CLI build process
+5:Start using Tailwind in your HTML
+
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body>
+  <h1 class="text-3xl font-bold">
+    Hello world!
+  </h1>
+</body>
+</html>
+
+Example: Inline, Internal, External - Customization
+
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+</head>
+<style>
+    h2 {
+      color: blue;
+    }
+</style>
+<body>
+  <h1 class="text-3xl font-bold">
+    Hello world!
+  </h1>
+  <p style="color: brown;">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+  <h2>Hello EveryOne - Example for External</h2>
+  <h3 class="customClass">Example for External</h3>
+</body>
+</html>
+
+input.css:
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.customClass{
+    color: sandybrown;
+}
