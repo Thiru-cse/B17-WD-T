@@ -1,15 +1,113 @@
-// Math.random() returns a random number between 0 and 1
-// Math.floor() returns the largest integer less than or equal to a given number
-// textContent property sets or returns the text content of the specified node, and all its descendants
-// Callback function is a function that is passed as an argument to another function
+Day 16 - DOM
 
-function greetings(name, callback){
-    console.log('Hello ' + name); // Printing the name
-   callback() // Calling the function
+- document.querySelector
+i need to extract first occurrence of the HTML.
+will select the first occurrence of the HTML element.
+it will return the HTML Element.
+
+Example:
+var element = document.querySelector('h1');
+console.log(element);
+
+- document.querySelectorAll
+i need to extract the first occurrence of the HTML,
+will select all occurrences of the HTML element.
+it will return the output in terms of an array.
+
+Example:
+var element = document.querySelectorAll('h1');
+console.log(element);
+
+    <h1>DOM</h1>
+    <button onclick="show()">Stop Screen Share</button>
+
+    <script>
+        function show() {
+  console.log("Hello World");
+           }
+    </script>
+
+Task:
+label, input, button.
+
+B17-WD-T -> Valid User | invalid user
+
+Example:
+<label>Email</label>
+    <input type="text" id="input">
+    <button type="button" onclick="valid()">Submit</button>
+function valid(){
+    var element = document.getElementById("input").value;
+    if(element == "B17-WD-T"){
+        alert("Valid");
+    }else{
+        alert("Invalid");
+    }
 }
 
-function sayGoodbye(){
-    console.log('Goodbye'); // Printing Goodbye
+Task: Age 18 - You are eligible to vote
+      Below Age 17 - You are not eligible to vote
+
+AddEventListener
+it takes 2 parameter
+First is the event name - click, change, keyup etc.
+Second is function that has be executed.
+
+Example:
+var button = document.createElement("button");
+button.setAttribute("type", "button"); 
+button.innerText = "Submit";
+document.body.append(button);
+
+// addEventListener
+button.addEventListener("click", verify);
+
+function verify(){
+    console.log("Button clicked");
 }
 
-greetings("Thiru", sayGoodbye); // Passing the function
+- MouseOver
+Example:
+var div = document.createElement('div');
+div.innerText = 'Click';
+document.body.append(div);
+
+div.addEventListener("mouseover", ()=>div.style.backgroundColor = "red");
+
+-Confirm
+this is used for yes or no
+if yes means it return true
+if no means it return false
+
+var button = document.createElement('button');
+button.setAttribute("type", "button");
+button.innerText = 'Confirm';
+document.body.append(button);
+
+button.addEventListener("click", dabba);
+
+function dabba() {
+    var res = confirm("Hey King you dropped this...👑");
+    console.log(res);
+}
+
+Example: Append vs AppendChild
+var div1=document.createElement("div");
+div1.setAttribute("id","div1");
+div1.innerText="Hello";
+// <div id="div1">Hello</div>
+
+var div2=document.createElement("div");
+div2.setAttribute("id","div2");
+div2.innerText="World";
+// <div id="div2">World</div>
+
+document.body.appendChild(div2,div1);
+
+Recall:
+querySelector,
+querySelectorAll,
+addEventListener,
+onclick, mouseover,
+alert, confirm, prompt,
+append, appendChild.
