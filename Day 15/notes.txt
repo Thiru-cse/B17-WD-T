@@ -1,0 +1,89 @@
+DOM - Document Object Model
+
+ Create Element - Tag+Content
+ Step 1: Create a HTML element
+ We have to use document.createElement(element name)
+ this is an inbuilt method in JavaScript
+ which takes element name as parameter.
+var element = document.createElement('div');
+ <div></div>
+
+ Step 2: To Add Content to the Element
+ by using innerText property
+element.innerText = 'Hello World';
+ <div>Hello World</div>
+
+ Step 3: Appending the Element to the Body
+document.body.append(element);
+
+ Task: <p>This is a paragraph tag</p>
+
+Attribute
+to give attribute to an element
+setAttribute method.
+it takes two parameters, first is the attribute name and 
+                          second is the value of the attribute.
+both are values are string.
+
+var element = document.createElement('div');
+//<div></div>
+element.setAttribute("class", "container bg-primary");
+ <div class="container bg-primary"></div>
+element.innerText = "Attribute";
+ <div class="container bg-primary">Attribute</div>
+document.body.append(element);
+
+ innerText vs innerHTML
+ More details on HTML
+ 1. Content
+ 2. Nested Element
+ an alternate to innerHTML is textContent
+ innerHTML: Access the HTML content inside an element
+ innerText: Access the text content inside an element
+var ele = document.createElement('div');
+ele.innerHTML = "<p>HTML Content</p>";
+document.body.append(ele);
+
+Task:
+<div class="container">
+<div class="row">
+<div class="col">Hello</div>
+</div>
+</div>
+
+Example:
+var element = document.createElement('div');
+element.setAttribute("class", "container");
+
+var element1 = document.createElement('div');
+element1.setAttribute("class", "row");
+
+var element2 = document.createElement('div');
+element2.setAttribute("class", "col");
+element2.innerHTML = "Hello";
+
+document.body.append(element, element1, element2);
+
+ document.getElementById
+ this method is applicable if you have id attribute in HTML Element.
+ this element must be in html file.
+ Extract here in JS
+ it returns the HTML Element.
+
+var element = document.getElementById("container");
+console.log(element);
+
+ document.getElementByClassName
+ this method is applicable if you have class attribute in the HTML element
+ the output will be an array of elements
+
+
+var element = document.getElementsByClassName("main");
+console.log(element);
+
+ document.getElementByTagName.
+ this method is applicable if you have tag selector.
+ output also will be an array.
+
+var element = document.getElementsByTagName('p');
+console.log(element);
