@@ -1,0 +1,22 @@
+div{
+    background-color: brown;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 30%;
+    height: 250px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border: 5px solid black;
+    color: yellow;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
