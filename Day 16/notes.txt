@@ -1,0 +1,15 @@
+// Math.random() returns a random number between 0 and 1
+// Math.floor() returns the largest integer less than or equal to a given number
+// textContent property sets or returns the text content of the specified node, and all its descendants
+// Callback function is a function that is passed as an argument to another function
+
+function greetings(name, callback){
+    console.log('Hello ' + name); // Printing the name
+   callback() // Calling the function
+}
+
+function sayGoodbye(){
+    console.log('Goodbye'); // Printing Goodbye
+}
+
+greetings("Thiru", sayGoodbye); // Passing the function
