@@ -1,0 +1,55 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.container{
+    margin: 50px auto;
+    max-width: 380px;
+    background-color: aqua;
+    border-radius: 8px;
+    box-shadow: 10px 10px 5px -9px rgba(0,0,0,0.75);;
+    padding: 50px;
+}
+
+h1{
+    color: red;
+}
+
+.dice-area{
+    display: flex;
+    justify-content: space-around;
+}
+
+.player{
+    text-align: center;
+}
+
+.dice{
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+button{
+    background-color: goldenrod;
+    padding: 10px 20px;
+    color: brown;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: brown;
+    color: goldenrod;
+}
+
+#result{
+    margin-top: 20px;
+    font-size: 18px;
+    color: rgb(32, 61, 178);
+    font-weight: bold;
+}
