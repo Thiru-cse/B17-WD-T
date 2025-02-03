@@ -1,0 +1,111 @@
+Day 18
+
+Javascript: Single threated execute single task at the time.
+
+Synchronous: which execute all the code line by line.(Block)
+
+Asynchronous: programming you can do task without waiting for a task to complete
+              its execution.( Non-Blocking.)
+
+setTimeout(): This method execute a function, after waiting specific number of millisecond.
+
+Syntax:
+setTimeout(function, millisecond);
+
+Example:
+<h1>Settimeout</h1>
+<button onclick="setTimeout(timeout, 5000)">Submit</button>
+
+function timeout(){
+    console.log("Timeout");
+}
+
+Task: Print on HTML.
+
+setInterval(): This method repeat a given function at every given time interval.
+
+Syntax:
+setInterval(function, millisecond);
+
+Example:
+    <h1>Settimeout</h1>
+    <button onclick="setInterval(timeout, 2000)">Submit</button>
+    function timeout(){
+    console.log("Timeout");
+}
+
+Task: Every 3sec new H1(Hello) tag UI.
+
+Example:
+console.log("Started");
+
+setTimeout(function timer(){
+    console.log("2s Delay");
+}, 2000)
+
+console.log("Middle");
+
+setTimeout(function timer(){
+    console.log("5s Delay");
+}, 5000)
+
+console.log("Completed");
+
+1. CallStack: it is place in browser where it keep tracks the function that has to be called in a diagram.
+              it will be executed where the statement inside.
+
+2. Web API: it is place where the Async operation are actually executed.
+
+3. Event Queue: Queue is data structure First Come First Out(FIFO)
+                it stores the Async function which has to be executed next.
+
+4. Event Loop: it is between call stack as well as the event Queue.
+               the main role of the event loop is whether the call stack is empty or not.
+               if it is empty it will push the code from Queue and it to call stack.
+               the call stack execute the function.
+
+Callback Hell: 
+
+Example:
+console.log("Start");
+
+setTimeout(()=>{
+    console.log("First");
+    setTimeout(()=>{
+        console.log("Second");
+        setTimeout(()=>{
+            console.log("Third");
+        },2000)
+    },2000)
+},2000)
+
+console.log("End");
+
+
+Task: 10, 9, 8, 7, 6, 5, 4, 3, 2, 1 - Happy New Year!
+
+Promise: it holds the result of Async operation.
+Need of Promise: to overcome Callback hell scenerio.
+it is an object, which is holds result of the operation.
+
+Syntax:
+var variableName = new Promise((resolve, reject));
+
+For every promise object we have state,
+1. Pending
+2. Fulfilled(resolve)
+3. Rejected(reject)
+
+Example:
+var a = new Promise((resolve, reject) => {
+    if(5>0){
+        resolve("Success");
+    } else{
+        reject("Rejected");
+    }
+});
+
+console.log(a);
+
+Task: 18 you are eligible to vote / 17 not eligible to vote ------> Prompt, Promise.
+
