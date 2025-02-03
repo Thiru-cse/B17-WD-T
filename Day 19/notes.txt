@@ -1,0 +1,97 @@
+Example:
+if function return promise
+if both resolve and reject is given it depend on order
+
+function find(num){
+    return new Promise((resolve, reject) => {
+        resolve("This is resolve");
+        reject("This is reject");
+    })
+}
+
+find(1).then((data) => console.log(data)).catch((err) => console.log(err));
+
+- Chaining of Promises
+the result of first will be served as input to second. 
+
+function chain(num){
+    return new Promise((resolve, reject)=> setTimeout(()=> resolve(num*2), 2000))};
+
+    chain(5).then((data)=>{
+        console.log(data)
+        return chain(data); // 10
+    }).then((data1)=>{
+        console.log(data1); // 20
+        return chain(data1); 
+    }).then((data2)=>{
+        console.log(data2); // 40
+    });
+
+Promise.all()
+when you have multiple Promises
+it will wait until all the promise are getting resolved
+and then it return an array of value.
+
+Example:
+var p1 = new Promise((resolve, reject) => {
+    if (true) {
+        setTimeout(()=> resolve('Promise 1 resolved'), 3000);
+    } else{
+        setTimeout(()=> reject('Promise 1 reject'), 4000);
+    }
+})
+
+var p2 = new Promise((resolve, reject) => {
+    if (true) {
+        setTimeout(()=> resolve('Promise 2 resolved'), 2000);
+    } else{
+        setTimeout(()=> reject('Promise 2 reject'), 4000);
+    }
+})
+
+var p3 = new Promise((resolve, reject) => {
+    if (true) {
+        setTimeout(()=> resolve('Promise 3 resolved'), 4000);
+    } else{
+        setTimeout(()=> reject('Promise 3 reject'), 4000);
+    }
+});
+
+Promise.all([p1, p2, p3]).then((data)=> console.log(data)).catch((error)=> console.log(error));
+
+- Fetch
+Fetch takes API as parameter
+Syntax: fetch("API LINK");
+return type is promise
+to convert readable stream to object (JSON) we need to .json method
+Remember: always need a .then and .catch to handle promise.
+
+var res = fetch("https://restcountries.com/v3.1/all");
+res.then((data)=> data.json()).then((data1)=> console.log(data1));
+
+Task: Print the Country Name.
+
+Example:
+var res = fetch("https://restcountries.com/v2/all");
+res.then((data)=> data.json()).then((data1)=> {
+    for(var i=0; i<data1.length; i++ ){
+        console.log( data1[i].name);       
+    }
+});
+
+Task: Print the Country Name, Capital Name, Flag(img)
+
+- Async/Await
+// Async Function always return a promise
+// to handle promise we have await keyword
+// await keyword can be used only inside async function
+// await help us to wait until the promise get resolved
+// await replacement of the .then() method
+
+async function rest(){
+var res = await fetch("https://restcountries.com/v2/all");
+var result = await res.json();
+console.log(result);
+}
+
+rest();
