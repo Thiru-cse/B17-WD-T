@@ -1,0 +1,15 @@
+What is a Component in React?
+In React, a component is a reusable, self-contained piece of code that defines part of the UI (User Interface). Components allow you to break the UI into independent, reusable pieces, making it easier to build complex applications.
+
+React components can be of two types:
+Functional Components (preferred in modern React)
+Class Components (older React, still used in some cases)
+
+Why Components?
+
+Reusability: Components can be reused across different parts of your app, reducing redundancy.
+Separation of Concerns: Each component is responsible for a specific part of the UI, which makes the app easier to manage and maintain.
+Modular: Building an app using components allows you to easily break down complex interfaces into smaller, manageable pieces.
+
+JSX Elements: react comp returns jsx
+     		JSX (JavaScript XML) is a syntax extension used in React to write UI elements in a more intuitive and readable way. JSX allows you to combine JavaScript and HTML-like syntax to create React elements.
