@@ -1,0 +1,62 @@
+Props vs State:
+	In React, both props and state are important concepts that help manage data within components
+	Props:
+Props (short for properties):
+Definition: Props are data that are passed into a component from its parent component.
+Immutability: Props are immutable, meaning they cannot be modified by the child component that receives them.
+
+State:
+Definition: State is an internal data storage mechanism within a component.
+Immutability: State is mutable, and it can be modified using the setState method provided by React.
+Role: It is used to manage dynamic data that can change over time within a component.
+
+Passing Data Using Props
+Parent to child data Passing
+Child to Parent Data Passing
+Prop Drilling & its Disadvantage
+
+What is Prop Drilling?
+Prop drilling refers to the process of passing data from one component down to deeply nested child components through multiple levels of components. This happens when the data is initially in the parent component, but needs to be used by components that are deeper in the component tree.
+Disadvantage
+In React, the most common way to pass data is by using props. But when there are many layers of components between the parent and the child that needs the data, you may end up passing the props through several components, even if those intermediate components don't need the data themselves. This is what is referred to as prop drilling.
+
+Array Methods
+map() Method
+The map() method is used to iterate over an array and return a new array where each element has been modified based on some logic. It doesn't mutate the original array.
+
+filter() Method
+
+The filter() method is used to create a new array by including only the elements that meet certain conditions. It doesn't mutate the original array.
+
+reduce() Method
+
+The reduce() method is used to iterate over an array and accumulate a single value based on some logic, such as summing numbers or concatenating strings.
+	
+
+
+Push & Pop , forEach , indexOf : 
+Push:
+The push() method is used to add one or more elements to the end of an array. It modifies the array in place and returns the new length of the array.
+Pop:
+The pop() method is used to remove the last element from an array. It modifies the array in place and returns the removed element.
+forEach 
+The forEach() method is used to iterate over arrays and execute a function for each element. Unlike map(), it doesn't return a new array, it just performs operations for each item.
+In React, you might use forEach() to perform actions that don't require returning anything, like logging values or updating a state based on conditions.
+indexOf in JavaScript and React
+The indexOf method in JavaScript is used to find the first index of a specified element in an array. If the element is not found, it returns -1.
+Slice & Splice in JavaScript and React
+In JavaScript, slice() and splice() are array methods that allow you to manipulate arrays. 
+What is slice()?
+The slice() method returns a shallow copy of a portion of an array into a new array object selected from start to end (end not included).
+It does not modify the original array.
+		Syn: array.slice(start, end)
+			start: The index at which to begin extraction (default is 0).
+end: The index at which to end extraction (not included, default is the array's length).
+What is splice()?
+The splice() method changes the contents of an array by removing or replacing existing elements and/or adding new elements in place.
+It modifies the original array and returns an array containing the removed elements.
+		Syn : array.splice(start, deleteCount, item1, item2, ...)
+		start: The index at which to start changing the array.
+deleteCount: The number of elements to remove from the array.
+item1, item2, ...: The elements to add to the array (optional).
+
