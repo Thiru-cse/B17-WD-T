@@ -1,0 +1,50 @@
+What is NPM ?
+NPM (Node Package Manager) plays a crucial role in React development, just like in any other JavaScript project. When you're working with React, NPM is used to install and manage the dependencies required to build your React applications. These dependencies include the React library itself, other third-party libraries, and tools that make development easier.
+NPM is a package manager that comes bundled with Node.js, and it's essential for managing the packages (also called modules).
+Eg:
+npm install axios
+
+Why Use NPM Packages in React?
+Code Reusability: Instead of reinventing the wheel, you can use pre-built solutions for common problems.
+Efficiency: It speeds up the development process by letting you integrate third-party code directly into your project.
+Community Support: Most NPM packages are open-source and maintained by developers around the world. You can rely on well-tested solutions and contributions from the developer community.
+
+
+
+Why react:
+	React is a popular open-source JavaScript library for building user interfaces (UIs) and user interface components. It was developed by Facebook and is widely used for creating dynamic and interactive web applications, particularly for single-page applications.
+
+React allows developers to build reusable UI components and manage the state of a web application efficiently.
+Key features and concepts of React include:
+1.     Component-Based Architecture
+2.     Virtual DOM
+3.     One-Way Data Flow
+4.     JSX (JavaScript XML)
+5.     Component Lifecycle
+6.     State Management
+7.     Reusable Components
+8.     React Router
+
+What is a Single Page Application (SPA)?
+A Single Page Application (SPA) is a type of web application or website that loads a single HTML page and dynamically updates the content of that page as the user interacts with the app. Instead of loading new pages from the server for each interaction, an SPA modifies the current page using JavaScript and AJAX to display new data, which provides a smooth, fast user experience similar to desktop applications.
+
+Real-World Examples of SPAs:
+Gmail: Gmail uses an SPA approach where content updates (such as reading or composing emails) happen without reloading the entire page.
+
+Facebook: Once you load Facebook, navigating between profiles, posts, or messages doesn't refresh the page.
+
+Twitter: Twitter dynamically updates content (tweets, notifications) without reloading the page.
+
+Google Maps: Dragging the map or searching for a new location updates the view without loading a new page.
+
+SPAs with React
+React is one of the most popular frameworks for building SPAs. With React, components are used to build different parts of the interface, and React Router allows developers to manage client-side navigation seamlessly without page reloads.
+
+Library vs Framework Explanation : 
+	
+Library:
+A library is a collection of pre-written code and functionalities that you can use in your own projects to solve specific problems. 
+Eg: axios
+
+Framework:
+	When using a framework, you build your application within its predefined structure. This can streamline development but might limit flexibility compared to libraries.
