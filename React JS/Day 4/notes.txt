@@ -1,0 +1,62 @@
+Hooks
+
+Introduction to Hook:
+React state and lifecycle features from functional components, instead of using class components. They were introduced in React 16.8 as a way to simplify state management and side effects in functional components.
+Major or familiar hooks:
+useState, useeffect, useContext
+Other Hooks:
+useCallback, useMemo, useRef, useReducer 
+
+Class Component Lifecycle Methods:
+
+Mounting Phase: called before every render when new props or state are received.
+
+Updating Phase: Called after the component's updates
+
+Unmounting Phase: Called immediately before a component is unmounted or destroyed.
+     	
+Functional Component Lifecycle with Hooks:
+              	Mounting Phase:  useState(), useEffect()
+              	Updating Phase :  useState(), useEffect() 
+              	Unmounting Phase : useEffect()
+(useMemo() and useCallback() (AVOIDING UNNECESSARY    RE RENDERING THE COMPONENTS) 
+
+Why Hooks are Necessary:
+No More Lifecycles: In class components, you had to deal with lifecycle methods like componentDidMount, componentDidUpdate, and componentWillUnmount. With Hooks like useEffect, you can handle those side effects all in one place.
+More Readable Code: Code written with Hooks is more concise and readable than class-based components.
+Easier to Reuse Logic: Custom Hooks let you extract component logic (like fetching data or managing a timer) into reusable functions.
+
+
+
+useState:
+What is it?
+useState is a Hook that lets you add state to functional components. In React, state refers to data that changes over time and can influence what gets rendered on the screen.
+Why do we need useState?
+In the past, only class components could hold state. But with Hooks like useState, functional components can also have state, making the code cleaner and easier to maintain.
+const [state, setState] = useState(initialValue);
+state: The current value of the state (initially set to initialValue).
+setState: A function to update the state value, causing the component to re-render.
+initialValue: The initial value of the state (e.g., 0, "", or an object).
+
+useEffect:
+What is it?
+useEffect is a Hook that allows you to run side effects in functional components. Side effects are actions like fetching data, updating the DOM, or setting up subscriptions that occur outside the component rendering process.
+
+Why do we need useEffect?
+Without useEffect, it’s difficult to perform tasks like fetching data from an API, updating the document title, or interacting with browser events in functional components. useEffect helps manage these operations in a clean and declarative way.
+	
+
+useEffect(() => {
+  // Side effect code here (e.g., fetch data, update document title)  
+  return () => {
+    // Cleanup code here (if needed)
+  };
+}, [dependencies]); // Dependency array
+The first argument is a function containing the side effect.
+The second argument is an optional dependency array. It tells React when to re-run the effect (when the dependencies change). If left empty, it runs once after the initial render.
+Explain with examples
+
+Keys in Array
+	In React, when rendering lists using the .map() function, each item in the list needs a unique key to help React identify which items have changed, are added, or are removed. This improves the performance of the list rendering by reducing unnecessary re-rendering.
+	With keys: React knows exactly which item was added and only updates that one.
+Without keys: React doesn’t know what changed, so it might unnecessarily re-render the entire list.
