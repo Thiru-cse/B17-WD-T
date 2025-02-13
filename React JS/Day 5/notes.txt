@@ -1,0 +1,20 @@
+useCallback and useMemo in React
+Both useCallback and useMemo are React hooks that help optimize performance by preventing unnecessary re-rendering of components. 
+They are particularly useful in larger applications where many components and functions are involved. 
+Understanding these hooks is key to improving the performance and efficiency of React applications.
+
+useCallback Hook
+What is useCallback?
+useCallback is a hook that memoizes a function, meaning it returns a cached version of the function if its dependencies haven't changed.
+This prevents the function from being recreated on every render, which can help improve performance.
+
+When to use useCallback?
+Use it when you have a function that’s passed down to child components or used as a dependency in useEffect,
+and you don’t want that function to be re-created on every render unless its dependencies change.
+
+useMemo Hook
+What is useMemo?
+useMemo is a hook that memoizes a computed value and only recalculates it when its dependencies change.
+It is useful for optimizing expensive calculations that shouldn’t be recalculated on every render.
+When to use useMemo?
+Use it when you have an expensive calculation that doesn't need to be recalculated on every render unless certain values (dependencies) change.
