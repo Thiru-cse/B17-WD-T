@@ -1,0 +1,60 @@
+Use Ref Hook:
+     	useRef to access to DOM elements, manage focus,  
+     	A function that uses the ref to focus on the element.
+A ref is like a "magical pointer" that allows you to interact directly with a specific DOM element
+useRef() only returns one item. It returns an Object called current (focus(), value)
+don't trigger a re-render of the component but state managed.
+ 
+Ex:  const ref= useRef()  => returns current object
+(focus(), value) 
+ref.current.focus() ->  focus on the element.
+Ref.current.value -> input box -> value
+useReducer Hook:
+     	It is similar to the useState Hook.
+It allows for custom state logic.
+If you find yourself keeping track of a group of states that rely on complex logic.
+     	The useReducer Hook returns the current state value and a dispatchmethod.
+     	trigger a re-render of the component when state updated using dispatch.
+Ex: 
+const[state, dispatch] = useReducer(ReducerAction, statevalue)
+State = stateValue
+Dispatch = reducerAction()
+React-Router-Dom
+
+	What is Router:
+              	The concept of a router refers to a mechanism or library that helps manage navigation and the changing of views in a single-page application (SPA). 
+React Router is the most commonly used routing library for React applications. It enables the creation of dynamic and navigable user interfaces by allowing developers to define routes and handle different views or components based on the URL.
+ 
+     	React Router DOM:
+              	It is a library for handling routing in React applicationsIt is a process or a way of navigating to the different pages of the application based on the user request without reloading the webpage.
+     	It provides a way to create single-page applications (SPAs) with multiple views.
+     	Rendering the appropriate components based on the current URL
+     	Structure for routing: 
+BrouserRouter,Routes,Route, Link URL params
+ 
+<BrouserRouter>
+     	<Routes>
+              	<Route path=’/about’  element={<About />} />
+     	</Routes>
+</BrouserRouter>
+
+otherComponents: 
+<link to=’/about’>  or <NavLink> elements and js-> navigate() useNavigate hook
+ 
+Diff between NavLink & Link tag:
+     	link : 
+     	It's used to create a hyperlink to navigate to a specific route.
+NavLink:
+It allows you to apply styles or other effects based on whether the link is currently active.
+ 
+Nomatch Nested route & Outlet -> example should be given to learners.
+ 
+1.   Install and setup of routes (npm i react-router-dom)
+2.   Configure (Eg:simple home page and about page)
+3.   Link (Navigate one component to another) <Navbar /> <nav>
+4.   Navlink (especially for css)
+5.   useNavigate() Hook  
+6.   No match route (very important in real time(page not found), path= ‘*’)
+7.   Nested Routing & outlet(It is used to render child routes within a parent route.) (path=’name’ should not use ‘/name’)
+(outlet)
+8.   Dynamic Routes(params  path=’/user/:userId)
