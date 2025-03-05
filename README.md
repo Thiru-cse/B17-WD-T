@@ -7,16 +7,15 @@ Welcome to the **MERN Stack Learning Repository**! 🚀 This repository contains
 ## 📂 Repository Structure
 
 Each folder contains detailed **notes and code** based on learning days:
-- `Day 1` - HTML Basics
-- `Day 2` - CSS Fundamentals
-- `Day 13 & 14` - JavaScript Essentials
+- `Day 1 - 4` - Javascript Basics
+- `Day 5 - 10` - HTML & CSS Fundamentals
+- `Day 11 - 14` - TailwindCSS, Projects
 - `Day 15 - 22` - JavaScript DOM, HTML CSS CRUD, Live Practice and more!
-- `Day 23 - 32` - React JS
+- `Day 23 - 32` - React JS, Redux
 - `Day 33 - 34` - MySQL
 - `Day 35` - MongoDB
 - `Day 36 - 41` - Node JS
 
-...
 
 ---
 
