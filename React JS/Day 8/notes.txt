@@ -1,1 +1,26 @@
-Day 8
+Day 8 : Context-API
+
+Introduction :
+Global State Management
+Avoid Prop Drilling
+Performance Optimization
+ 
+What is context, provide, createContext:
+ 
+createContext():
+A context is created using the createContext function. It returns an object with a Provider and a Consume
+Provider:
+The Provider component is responsible for providing the context value to its children.
+It takes a value prop, which is the data you want to share.
+provide & Multiple (providers & values={[value, setValue  ]} & multiple states
+ 
+useContext ():
+is used to consume a React context within a functional component.
+ 
+Avoid props drilling:
+     	It refers to the process of passing props through multiple layers of React components in order to provide data to deeply nested components.
+ 
+Disadvantages:
+Maintenance Complexity: If you need to add or modify a prop at the bottom of the component hierarchy, you have to update every intermediate component.
+Breaking Abstraction: Components in the middle of the hierarchy might receive and pass down props that they don't use
+
