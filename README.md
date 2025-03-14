@@ -39,6 +39,13 @@ Each folder contains detailed **notes and code** based on learning days:
 | 🎨 **Design Tools Hub** | [Design Tool Hub](https://www.designtoolshub.com/) |
 | 🖍 **Icons Collection** | [FontAwesome](https://fontawesome.com/icons) |
 | 🔤 **Fonts Collection** | [Google Fonts](https://fonts.google.com/) |
+| 📖 **ReadMe Generator** | [Readme Generator](https://rahuldkjain.github.io/gh-profile-readme-generator/) |
+| 🧟 **Portfolio Samples** | [Google Fonts](https://github.com/emmabostian/developer-portfolios/) |
+| 🧑‍🏫 **Problem Solving Practice** | [Problem Solving Practice](https://www.guvi.in/code-kata/) |
+| 🧾 **HTML, CSS Interview Question** | [HTML, CSS Interview Question](https://docs.google.com/document/d/10tttJf5p1DfWhbBfzUV2-ReRJudxlIem7xX0QiiiCH8/edit?usp=sharing) |
+| 📗 **JS Interview Question** | [JS Interview Question](https://docs.google.com/document/d/1KYrYGttncVXTlIQrcOaX1Qo2BwgwIX-MlQJKFx-ynXA/edit?usp=sharing) |
+| 📔 **ReactJS Interview Question** | [ReactJS Interview Question](https://docs.google.com/document/d/1pBEgFUEBcwS9oQOBb9x1xYRR2mUM6IFbJ1eMQ66UBoo/edit?usp=sharing) |
+| 📑 **NodeJS & MongoDB Interview Question** | [NodeJS & MongoDB Interview Question](https://docs.google.com/document/d/1lCQWL8sgrKF6vdaYoqztuW2DcGJmGocGT3FD3NtRXyk/edit?usp=sharing) |
 
 ---
 
