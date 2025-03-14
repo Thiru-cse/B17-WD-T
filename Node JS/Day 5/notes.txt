@@ -1,0 +1,48 @@
+Nodejs - Authentication & Authorization
+
+Authentication 
+It is used for securing access to resources and ensuring that users are who they claim to be. 
+Authentication can be implemented in various ways depending on the requirements of the application, 
+such as using usernames and passwords, token-based, o_auth, multi_auth methods etc.
+Bcrypt => bcryptjs
+It is a popular password hashing library for Node.js applications. It provides a secure way to hash and verify passwords,
+making it difficult for attackers to crack passwords even if they gain access to the hashed value 
+
+3 Important Steps:
+npm install bcrypt or bcryptjs 
+bcrypt.hash(password, 10) -> salt factor 10 rounds  //register
+bcrypt.compare(userProvidedPassword, storedHashedPassword) //login
+
+
+JWT:
+JWT stands for "JSON Web Token"
+JWT is commonly used for authentication and authorization purposes.
+used for securely transmitting information between client and server.
+Install:
+npm i jsonwebtoken
+ 
+jwt.sign(): Token generate
+jwt.sign(payload, secretOrPrivateKey)   //login api
+Example:
+Const token= jwt.sign({ _id: user._id },JWT_SECRET)
+ 
+jwt.verify(): Verify generated token
+jwt.verify(token, secretOrPublicKey)    //middleware
+ 
+Example:
+const decoded = jwt.verify(token, JWT_SECRET);
+
+
+Authorization:
+Authorization in Node.js is the process of determining whether a user or client has permission to perform 
+a specific action or access particular resources. While authentication is about verifying identity, 
+authorization is about granting access to resources based on that identity.
+
+
+Custom middleware
+ is a powerful feature in Express and Node.js, allowing you to modularize(module) your application's functionality and 
+execute code at different stages of the request-response cycle. 
+
+next() is invoked, the control is passed to the next middleware or route handler in the sequence.
+
+
